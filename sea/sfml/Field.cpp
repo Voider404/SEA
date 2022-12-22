@@ -93,7 +93,7 @@ int Field::getShot(Point coords)
 	return 0;
 }
 
-void Field::drawShip(Ship ship, int cellType)
+void Field::drawShip(Ship ship, int cellType) // создание корабля на поле
 {
 	for (int i = ship.cells[0].x - 1; i <= ship.cells[ship.cells.size() - 1].x + 1; ++i)
 	{
@@ -108,7 +108,7 @@ void Field::drawShip(Ship ship, int cellType)
 	}
 }
 
-void Field::eraseShip(Ship ship)
+void Field::eraseShip(Ship ship) // "удаление" корабля
 {
 	for (int i = ship.cells[0].x - 1; i <= ship.cells[ship.cells.size() - 1].x + 1; ++i)
 	{
