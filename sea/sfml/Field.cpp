@@ -22,7 +22,7 @@ Field::~Field()
 	delete fieldData;
 }
 
-bool Field::addShip(Point start, bool horizontal, int size)
+bool Field::addShip(Point start, bool horizontal, int size) // добавление кораблей
 {
 	if (start.x < 0 || start.y < 0 || start.x >= 10 || start.y >= 10)
 	{
@@ -66,7 +66,7 @@ void Field::deleteShip(Point point)
 	}
 }
 
-int Field::getShot(Point coords)
+int Field::getShot(Point coords) // подстрел корабля
 {
 	for (int i = 0; i < ships.size(); ++i)
 	{

@@ -40,7 +40,7 @@ bool Ship::isAlive()
 	return false;
 }
 
-bool Ship::getShot(Point coords)
+bool Ship::getShot(Point coords) // проверка на подбитие
 {
 	for (int i = 0; i < cells.size(); ++i)
 	{

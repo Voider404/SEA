@@ -23,11 +23,11 @@ void Game::makeStep(int x, int y)
 
 int Game::gameOver()
 {
-	if (player.field.ships.size() == 0)
+	if (player.field.ships.size() == 0) // при победе игрока
 	{
 		return 1;
 	}
-	if (ai.field.ships.size() == 0)
+	if (ai.field.ships.size() == 0) // при победе ИИ
 	{
 		return 2;
 	}
