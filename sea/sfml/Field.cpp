@@ -79,7 +79,7 @@ int Field::getShot(Point coords)
 			if (!ships[i].isAlive())
 			{
 				drawShip(ships[i], 2); //корабль убит
-				ships.erase(ships.begin() + i);
+				ships.erase(ships.begin() + i); // удаление корабля + радиуса в 1 блок
 				return 2;
 			}
 			else
