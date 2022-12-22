@@ -2,13 +2,13 @@
 
 bool Actor::getRandBoll()
 {
-	return rand() % 2 == 0;
+	return rand() % 2 == 0; // деление с остатком
 }
 
-void Actor::randFillField()
+void Actor::randFillField() // случайное заполнение поля
 {
 	bool a = true;
-	while (field.ships.size() < 1)
+	while (field.ships.size() < 1) // при размере корабля меньше определённого значения
 	{
 		a = getRandBoll();
 		if (a)

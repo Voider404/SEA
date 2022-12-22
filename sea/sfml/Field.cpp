@@ -128,10 +128,10 @@ ostream& operator<<(ostream& stream, const Field& field)
 		{
 			switch (field.fieldData[i][j])
 			{
-			case 0: stream << '.'; break;
-			case 1: stream << 'O'; break;
-			case 2: stream << 'X'; break;
-			case 3: stream << '!'; break;
+			case 0: stream << '.'; break; //0 - пусто
+			case 1: stream << 'O'; break; //1 - живая палуба
+			case 2: stream << 'X'; break; //2 - мертвая палуба
+			case 3: stream << '!'; break; //3 - промах
 			}
 		}
 		stream << endl;
