@@ -66,7 +66,7 @@ void Field::deleteShip(Point point)
 	}
 }
 
-int Field::getShot(Point coords) // подстрел корабля
+int Field::getShot(Point coords) // проверка на подстрел корабля
 {
 	for (int i = 0; i < ships.size(); ++i)
 	{
