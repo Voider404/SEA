@@ -18,7 +18,7 @@ public:
 
 	bool addShip(Point start, bool horizontal = true, int size = 1);
 	void deleteShip(Point point);
-	int getShot(Point coords); //0 - miss, 1 - shot, 2 - deadshot
+	int getShot(Point coords); //0 - пусто, 1 - живая палуба, 2 - мертвая палуба
 	void drawShip(Ship ship, int cellType);
 	void eraseShip(Ship ship);
 	friend ostream& operator<<(ostream& stream, const Field& field);
