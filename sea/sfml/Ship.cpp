@@ -28,7 +28,7 @@ Ship::~Ship()
 	cells.clear();
 }
 
-bool Ship::isAlive()
+bool Ship::isAlive() // проверка на то, живой или не живой
 {
 	for (int i = 0; i < cells.size(); ++i)
 	{
